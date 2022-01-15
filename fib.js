@@ -16,6 +16,11 @@ const fibTab = (n) => {
     for(let i = 2; i <= n; i++){
         a[i] = a[i-1]+a[i-2];
     }
+    /* for(let i = 0; i <= n; i++){
+        a[i+1] += a[i];
+        a[i+2] += a[i];
+    }
+     */
     return a[n];
 }
 
