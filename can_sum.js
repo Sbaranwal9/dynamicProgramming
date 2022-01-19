@@ -12,3 +12,7 @@ const canSum = (targetSum, numbers, m = new Map()) => {
     m.set(targetSum, false);
     return false;
 }
+
+const canSumTab = (targetSum, numbers) => {
+    
+}
