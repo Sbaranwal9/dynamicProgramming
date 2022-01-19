@@ -1,6 +1,5 @@
 const findPath = (m, n) => {
    function findHelp(i, j, visited, str, res) {
-      console.log(i, j, visited, str, res);
       if (i < 0 || i > n - 1 || j < 0 || j > n - 1) return;
       if (visited[i][j] === 1) return;
       if (m[i][j] === 0) return;
@@ -20,6 +19,7 @@ const findPath = (m, n) => {
       .map(_ => Array(n).fill(0));
    let res = [];
    findHelp(0, 0, visited, '', res);
+   res.sort();
    return res;
 }
 
