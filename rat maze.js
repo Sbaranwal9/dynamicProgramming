@@ -29,7 +29,7 @@
 
 
 
-findPath(m,n){
+const findPath = (m,n) => {
     function findHelp(m,n,i,j,ar){
         if(i < 0 || i > n || j < 0 || j > n) return null;
         if(ar[i][j] === 1) return null;
