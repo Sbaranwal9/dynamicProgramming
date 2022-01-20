@@ -16,7 +16,7 @@ const canSum = (targetSum, numbers, m = new Map()) => {
 const canSumTab = (targetSum, numbers) => {
     const a = Array(targetSum + 1).fill(false);
     a[0] = true;
-    for (let i = 0; i < targetSum; i++) {
+    for (let i = 0; i <= targetSum; i++) {
         if (a[i] === true) {
             for (let j of numbers) {
                 if (i + j <= targetSum) {
