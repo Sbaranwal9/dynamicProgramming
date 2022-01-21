@@ -28,8 +28,7 @@ const bestSumTab = (targetNum, numbers) => {
             for (let j of numbers) {
                 if (i + j <= targetNum) {
                     const c = [...a[i], j];
-                    if (a[i + j] === null) a[i + j] = c;
-                    else a[i + j] = c.length < a[i + j].length ? c : a[i + j];
+                    if (a[i + j] === null || c.length < a[i + j].length) a[i + j] = c;
                 }
             }
         }
@@ -41,12 +40,12 @@ console.log(bestSum(7, [2, 3]));
 console.log(bestSum(7, [5, 3, 4, 7]));
 console.log(bestSum(7, [2, 4]));
 console.log(bestSum(8, [2, 3, 5]));
-console.log(bestSum(300, [7, 14]));
+console.log(bestSum(300, [7, 15]));
 console.log(bestSum(100, [1, 2, 5, 25]));
 
 console.log(bestSumTab(7, [2, 3]));
 console.log(bestSumTab(7, [5, 3, 4, 7]));
 console.log(bestSumTab(7, [2, 4]));
 console.log(bestSumTab(8, [2, 3, 5]));
-console.log(bestSumTab(300, [7, 14]));
+console.log(bestSumTab(300, [7, 15]));
 console.log(bestSumTab(100, [1, 2, 5, 25]));
