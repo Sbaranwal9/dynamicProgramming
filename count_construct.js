@@ -28,4 +28,13 @@ const countConstructTab = (target, wordBank) => {
 }
 
 console.log(countConstruct("purple",["purp", "p", "ur", "le", "purpl"]))
+console.log(countConstruct("abcdef",["ab", "abc", "cd", "def", "abcd"]))
+console.log(countConstruct("skateboard",["bo", "rd", "ate", "t", "ska", "sk", "boar"]))
+console.log(countConstruct("enterapotentpot",["a", "p", "ent", "enter", "ot", "o", "t"]))
+console.log(countConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", ["e", "ee", "eee", "eeee", "eeeee", "eeeeee"]))
+
 console.log(countConstructTab("purple",["purp", "p", "ur", "le", "purpl"]))
+console.log(countConstructTab("abcdef",["ab", "abc", "cd", "def", "abcd"]))
+console.log(countConstructTab("skateboard",["bo", "rd", "ate", "t", "ska", "sk", "boar"]))
+console.log(countConstructTab("enterapotentpot",["a", "p", "ent", "enter", "ot", "o", "t"]))
+console.log(countConstructTab("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", ["e", "ee", "eee", "eeee", "eeeee", "eeeeee"]))
