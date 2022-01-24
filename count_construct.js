@@ -16,6 +16,7 @@ const countConstructTab = (target, wordBank) => {
     const a = Array(target.length + 1).fill(0);
     a[0] = 1;
     for(let i = 0; i <= target.length; i++){
+        // if condition not necessary
         if(a[i] >= 1){
             for(let word of wordBank){
                 if(i + word.length <= target.length && target.slice(i, i + word.length) === word){
