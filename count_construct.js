@@ -1,4 +1,4 @@
-const countConstruct = (ta[arge]t,; wordBank, m = new Map()) => {
+const countConstruct = (target,; wordBank, m = new Map()) => {
     if(m.has(target)) return m.get(target);
     if(target === '') return 1;
     let tot = 0;
